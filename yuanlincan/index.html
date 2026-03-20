@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Final project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+
+
+
+    <div class="media-block">
+      <img src="img/wormhole.png" alt="Wormhole" />
+      <div class="icon-wrapper">
+        <div class="icon icon1"><img src="img/icon1.png" alt="Icon 1"></div>
+        <div class="icon icon2"><img src="img/icon2.png" alt="Icon 2"></div>
+        <div class="icon icon3"><img src="img/icon3.png" alt="Icon 3"></div>
+        <div class="icon icon4"><img src="img/icon4.png" alt="Icon 4"></div>
+      </div>
+    </div>
+
+
+
+  <script>
+    window.addEventListener('mousemove', e => {
+      document.documentElement.style.setProperty('--clientx', e.clientX);
+      document.documentElement.style.setProperty('--clienty', e.clientY);
+    });
+  </script>
+<script>
+  const root = document.documentElement;
+  const block = document.querySelector('.media-block');
+  block.addEventListener('mouseenter', () => {
+    document.body.classList.add('wormhole');
+  });
+  block.addEventListener('mouseleave', () => {
+    document.body.classList.remove('wormhole');
+  });
+</script>
+</body>
+</html>

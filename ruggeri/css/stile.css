@@ -1,0 +1,182 @@
+body {
+  background-color: ivory;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-text {
+  font-family: 'PP Neue Machina Plain', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #2B2B2B;
+  text-align: left;
+  margin: 0;
+  margin-left: 8px;
+}
+
+.body-text {
+  font-family: 'PP Neue Machina Plain', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2B2B2B;
+  text-align: left;
+  width: 38%;
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  margin: 100px;
+}
+
+.folder1, .folder2, .folder3, .folder4, .folder5, .folder6 {
+  width: 90%;
+  max-width: 1520px;
+}
+
+.folder {
+  position: relative;
+}
+
+.folder a {
+  display: block;
+  width: 1920px;
+  height: 213px;
+  margin-top: 200px;
+  margin-left: 8px;
+  border-radius: 0px 25px 25px 25px;
+  position: absolute;
+  line-height: 25px;
+  text-decoration: none;
+  font-family: 'PP Neue Machina Plain', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.folder1 {
+  background: #DFCDBF;
+  top: 60px;
+  z-index: 1;
+}
+
+.folder1::before {
+  content: 'Occhi';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 0px;
+  background: #DFCDBF;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder2 {
+  background: #CDBC6A;
+  top: 110px;
+  z-index: 2;
+}
+
+.folder2::before {
+  content: 'Bocca';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 200px;
+  background: #CDBC6A;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder3 {
+  background: #EB6447;
+  top: 160px;
+  z-index: 3;
+}
+
+.folder3::before {
+  content: 'Gesti';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 400px;
+  background: #EB6447;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder4 {
+  background: #9EB4A7;
+  top: 210px;
+  z-index: 4;
+}
+
+.folder4::before {
+  content: 'Braccia e gambe';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 600px;
+  background: #9EB4A7;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder5 {
+  background: #F5BBD3;
+  top: 260px;
+  z-index: 5;
+}
+
+.folder5::before {
+  content: 'Postura';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 800px;
+  background: #F5BBD3;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.folder6 {
+  background: #2B2B2B;
+  top: 310px;
+  z-index: 6;
+}
+
+.folder6::before {
+  content: 'Spazio personale';
+  position: absolute;
+  padding: 12px 22px;
+  top: -40px;
+  width: 300px;
+  height: 40px;
+  margin-left: 1000px;
+  background: #2B2B2B;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+}
+
+.footer {
+  color: black;
+  text-align: center;
+  margin-top: auto
+}
+
+.footer p {
+  margin: 2px;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 10px;
+}

@@ -1,0 +1,270 @@
+body {
+  background-color: ivory;
+  font-family: 'Neue Machina', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.folder1, .folder2, .folder3, .folder4, .folder5, .folder6 {
+  width: 90%; /* Imposta la larghezza dei folder al 90% della larghezza della pagina */
+  max-width: 1503px; /* Larghezza massima per i folder */
+}
+
+.folder {
+  position: relative;
+}
+
+
+.folder1 {
+  background: #DFCDBF;
+  top: 50px;
+  z-index: 1;
+}
+
+.folder1::before {
+  content: 'Occhi';
+  position: absolute;
+  padding: 12px 80px;
+  top: -80px;
+  width: 300px;
+  height: 40px;
+  margin-left: 0px;
+  background: #DFCDBF;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.folder2 {
+  background: #CDBC6A;
+  top: 50px;
+  z-index: 2;
+}
+
+.folder2::before {
+  content: 'Bocca';
+  position: absolute;
+  padding: 12px 80px;
+  top: -80px;
+  width: 300px;
+  height: 40px;
+  margin-left: 225px;
+  background: #CDBC6A;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.folder3 {
+  background: #EB6447;
+  top: 50px;
+  z-index: 3;
+}
+
+.folder3::before {
+  content: 'Gesti';
+  position: absolute;
+  padding: 12px 80px;
+  top: -80px;
+  width: 300px;
+  height: 40px;
+  margin-left: 450px;
+  background: #EB6447;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.folder4 {
+  background: #9EB4A7;
+  top: 50px;
+  z-index: 4;
+}
+
+.folder4::before {
+  content: 'Braccia e gambe';
+  position: absolute;
+  padding: 12px 40px;
+  top: -80px;
+  width: 300px;
+  height: 40px;
+  margin-left: 675px;
+  background: #9EB4A7;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.folder5 {
+  background: #F5BBD3;
+  top: 50px;
+  z-index: 5;
+}
+
+.folder5::before {
+  content: 'Postura';
+  position: absolute;
+  padding: 12px 80px;
+  top: -80px;
+  width: 300px;
+  height: 40px;
+  margin-left: 900px;
+  background: #F5BBD3;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.folder6 {
+  background: #2B2B2B;
+  top: 50px;
+  z-index: 7;
+}
+
+.folder6::before {
+  content: 'Spazio personale';
+  position: absolute;
+  padding: 12px 40px;
+  top: -79.8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 1125px;
+  background: #2B2B2B;
+  border-radius: 25px 0 0 0;
+  clip-path: path('M 0 0 L 220 0 C 230 0, 237 7, 250 14 L 300 45 L 0 45 z');
+  text-decoration: none; /* Rimuove il sottolineato dai link */
+  font-family: 'PP Neue Machina Plain', sans-serif; /* Usa il font personalizzato */
+  font-size: 20px;
+  color: white;
+}
+
+.contenitore {
+  position: absolute;
+  left:8px;
+  top: 72.9px;
+  background: #2B2B2B;
+  border-radius: 0px 25px 25px 25px;
+  width: 1508px;
+  height: 650px;
+}
+
+.folder a, .folder div {
+  display: block;
+  margin-top: 50px;
+  border-radius: 0px 25px 25px 25px;
+  position: absolute;
+}
+
+.header-text {
+  font-family: 'PP Neue Machina Plain', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: white;
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 60px;
+  max-width: 60%; /* Imposta una larghezza massima per controllare il testo */
+  white-space: normal; /* Consente al testo di andare a capo */
+  word-wrap: break-word; /* Consente il wrapping delle parole */
+}
+
+.body-text {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: white;
+  text-align: left;
+  width: 30%; /* Imposta la larghezza del testo per un migliore controllo */
+  top: 150px;
+  right: -60px;
+  margin-left: 30px;
+}
+
+.secondo-text {
+  margin-top: 20px; /* Aggiunge spazio sopra l'elenco puntato */
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: white;
+  text-align: left;
+  width: 30%;
+  position: absolute;
+  top: 430px;
+  margin-right: -240px;
+  right: 870px;
+}
+
+.horizontal-line1 {
+  position: relative;
+  width: 1453px;
+  border-top: 1.5px solid white;
+  margin-left: 25px;
+  margin-top: -305px;
+}
+
+.orizzontale2 {
+  position: relative;
+  width: 880px;
+  border-top: 1.5px solid white;
+  margin-left: 25px;
+  margin-top: 160px;
+}
+
+.orizzontale3 {
+  position: relative;
+  width: 1453px;
+  border-top: 1.5px solid white;
+  margin-left: 25px;
+  margin-top: 420px;
+}
+
+
+.vertical-line {
+  border-left: 1.5px solid white;
+  height: 560px;
+  position: absolute;
+  top: 53%;
+  transform: translateY(-53%);
+  margin-left: 920px;
+  
+}
+
+img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: 62.5px;
+  right: -5px;
+  margin-right: 35px; /* Adjust the margin to position the image */
+}
+
+.footer {
+  color: black;
+  text-align: center;
+  margin-top: auto
+}
+
+.footer p {
+  margin: 10px;
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 10px;
+}

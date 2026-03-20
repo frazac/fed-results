@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title> EGG TIMER </title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+
+<h1>UOVO STRAPAZZATO</h1>
+<div class="tempo-cottura">
+    <button class="avvia-cottura">Avvia cottura</button>
+    <div class="timer-video">
+        <img src="img/Uova_Strapazzate.gif" alt="cottura-gif" class="cottura-gif">
+        <div class="timer"></div>
+    </div>
+    <div class="pronto">
+     <img src="img/Sveglia.png" alt="Sveglia">
+     <p>Pronto!</p>
+    </div>
+    <audio class="suono-sveglia" src="audio/Alarm clock sound.mp3"></audio>
+</div>
+
+<div class="home">
+    <a href="file:///Users/eleonoratanzi/Desktop/EX-Egg%20Timer/index.html#">
+        <p class="freccia">←</p>
+        <p>HOME</p>
+    </a>
+</div>
+
+<button class="mute-toggle">
+    <img src="img/Volume-On.png" alt="Volume On">
+</button>
+
+<div class="bottom-text">© 2025 Eleonora Tanzi. Tutti i diritti riservati.</div>
+
+<script>
+    const bottone = document.querySelector(".avvia-cottura");
+    const gif = document.querySelector(".cottura-gif");
+    const pronto = document.querySelector(".pronto");
+    const timerDiv = document.querySelector(".timer");
+    const timerVideo = document.querySelector(".timer-video");
+    const audioSveglia = document.querySelector(".suono-sveglia");
+    const muteBtn = document.querySelector(".mute-toggle");
+    const muteImg = muteBtn.querySelector("img");
+
+    let durata = 120;
+    let intervallo = null;
+
+    function formattaTempo(secondi) {
+        const min = Math.floor(secondi / 60);
+        const sec = secondi % 60;
+        return `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+    }
+
+    bottone.addEventListener("click", () => {
+        bottone.style.display = "none";
+        pronto.style.display = "none";
+        timerVideo.style.display = "block";
+        gif.style.display = "block";
+        durata = 120;
+        timerDiv.textContent = formattaTempo(durata);
+
+        if (intervallo) clearInterval(intervallo);
+        intervallo = setInterval(() => {
+            durata--;
+            timerDiv.textContent = formattaTempo(durata);
+
+            if (durata <= 0) {
+                clearInterval(intervallo);
+                intervallo = null;
+                gif.style.display = "none";
+                timerVideo.style.display = "none";
+                pronto.style.display = "block";
+
+                audioSveglia.currentTime = 0;
+                audioSveglia.play();
+
+                pronto.querySelector("img").classList.add("oscilla");
+            }
+        }, 1000);
+    });
+
+    muteBtn.addEventListener("click", () => {
+        audioSveglia.muted = !audioSveglia.muted;
+        if (audioSveglia.muted) {
+            muteImg.src = "img/Volume-Off.png";
+            muteImg.alt = "Volume Off";
+        } else {
+            muteImg.src = "img/Volume-On.png";
+            muteImg.alt = "Volume On";
+        }
+    });
+</script>
+
+</body>
+</html>

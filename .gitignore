@@ -1,0 +1,32 @@
+# File system di macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# File di configurazione di VS Code
+.vscode/
+*.code-workspace
+
+# File temporanei
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Node modules (se presenti)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cartelle di build o dist (se presenti)
+dist/
+build/
